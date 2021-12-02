@@ -35,6 +35,9 @@ main {
     justify-content: center;
     margin-top: 2rem;
 }
+.content > div {
+    text-align: center;
+}
 
 .vs {
     padding: 0 1rem 0 1rem;
@@ -43,6 +46,22 @@ main {
 
 .container {
     margin-top: 30vh;
+}
+
+.blink {
+    color: #8f190d;
+    animation: blink-animation 2s steps(5, start) infinite;
+    -webkit-animation: blink-animation 2s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
 }
 
 .container img {
