@@ -23,8 +23,9 @@
 
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-<!--    <link rel="stylesheet" href="styles/main.css">-->
+    <!-- <link rel="stylesheet" href="styles/main.css">-->
 
+    <!--     Stiliai HTML'e nes github'as nepaeme tinkamo CSS failo is branch'o  -->
     <style>
         html, body, div, span {
             margin: 0;
@@ -63,6 +64,7 @@
             justify-content: center;
             margin-top: 2rem;
         }
+
         .content > div {
             text-align: center;
         }
@@ -81,11 +83,13 @@
             animation: blink-animation 2s steps(5, start) infinite;
             -webkit-animation: blink-animation 2s steps(5, start) infinite;
         }
+
         @keyframes blink-animation {
             to {
                 visibility: hidden;
             }
         }
+
         @-webkit-keyframes blink-animation {
             to {
                 visibility: hidden;
