@@ -135,7 +135,7 @@
 </main>
 <footer>
     <span>info(eat;)unfuzz.com</span>
-    <span class="year">2021</span>
+    <span id="currentYear" class="year"></span>
     <span>© all rights reserved</span>
 </footer>
 
@@ -155,6 +155,12 @@
     }(window, document, 'script', 'ga'));
     ga('create', 'UA-64956043-1');
     ga('send', 'pageview');
+
+    function currentYear() {
+        return (new Date()).getFullYear()
+    }
+
+    document.getElementById("currentYear").textContent = currentYear()
 </script>
 </body>
 
